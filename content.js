@@ -1,6 +1,22 @@
-function quack() {
-    var quackAudio = new Audio("audio/quack.wav")
-    quackAudio.play();
-};
+var controller = (function() {
 
-document.querySelector('#goose').addEventListener('click', quack);
+    function quack() {
+        var quackAudio = new Audio("audio/quack.wav")
+        quackAudio.play();
+    };
+
+    var setupEventListeners = function() {
+
+        document.querySelector('#goose').addEventListener('click', quack);
+    };
+
+    return {
+        init: function() {
+            setupEventListeners();
+        }
+    };
+
+
+})();
+
+controller.init();
