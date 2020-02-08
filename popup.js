@@ -7,7 +7,7 @@ var controller = (function() {
 
     var setupEventListeners = function() {
 
-        document.querySelector('#goose').addEventListener('click', quack);
+        document.querySelector('.goose').addEventListener('click', quack);
     };
 
     return {

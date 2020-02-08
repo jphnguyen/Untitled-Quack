@@ -1,21 +1,19 @@
 {
     "name": "Untitled Quack",
-    "version": "1.0",
+    "version": "1.1.0",
     "manifest_version": 2,
     "author": "jphnguyen",
     "description": "Quack!",
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "browser_action": {
-        "default_icon": "images/kisspng-duck-vector-graphics-royalty-free-clip-art-stock-p-5c616c7435cf62.6537246015498886282204.png",
+        "default_icon": "images/icon.png",
         "default_popup": "popup.html"
     },
     "icons": {
-        "128": "images/kisspng-duck-vector-graphics-royalty-free-clip-art-stock-p-5c616c7435cf62.6537246015498886282204.png"
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["content.js"]
-        }
-    ]
+        "128": "images/icon128.png",
+        "48": "images/icon48.png",
+        "32": "images/icon32.png",
+        "19": "images/icon19.png",
+        "16": "images/icon16.png"
+    }
 }
